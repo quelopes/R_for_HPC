@@ -1,6 +1,7 @@
 ---
 title: "codes in R for HPC"
-author: Raquel L. Costa and Guilherme Gall
+subtitle: "Semana do supercomputador Santos Dumont, LNCC"
+author: "Raquel L. Costa and Guilherme Gall"
 ---
 
 # Codes 
