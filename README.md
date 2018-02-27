@@ -1,15 +1,16 @@
 ---
-title: "Codes in R for HPC"
+title: "R para HPC"
 subtitle: "Semana do supercomputador Santos Dumont, LNCC"
-author: "Raquel L. Costa and Guilherme Gall"
+author: "Raquel L. Costa e Guilherme Gall"
 ---
 
-# Codes 
+# R para HPC 
 
-## RMPI
+Repositório com códigos de exemplo do curso "R para HPC".
 
-## snow
+Este repositório está organizado da seguinte forma:
 
-## dosnow
-
-## parallel
+* apply: exemplos de uso das funções da família apply
+* parallel: exemplos de uso das funções do pacote parallel, com versões
+  paralelas dos exemplos em `apply`
+* sbatch: exemplos de scripts de submissão funcionais do SLURM
