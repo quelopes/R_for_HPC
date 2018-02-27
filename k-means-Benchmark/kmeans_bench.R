@@ -139,7 +139,7 @@ vetTimeSeq
 # ======================
 vetTimePar = NULL
 
-# print("Via doSnow")
+print("Via doSnow")
 vetTimePar = kmeans_doSnow(data,ncenter)
 
 print("Via doMPI")
