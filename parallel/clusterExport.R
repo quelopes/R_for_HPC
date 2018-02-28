@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 # Exemplo de uso de clusterExport()
 
 # Carregamento do pacote

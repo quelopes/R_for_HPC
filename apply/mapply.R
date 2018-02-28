@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 # Retorna um vetor de 5 elementos com 
 # sum(1, 5, 1) na 1ª posição,
 # sum(2, 4, 2) na 2ª posição,

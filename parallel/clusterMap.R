@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 # Refaz clusterMap.R para usar as versões paralelas do pacote parallel
 
 # Carregamento do pacote

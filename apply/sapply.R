@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 # Cria uma lista X com 3 elementos:
 # 
 # * a: um inteiro

@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 # Exemplos de uso de clusterEvalQ() e clusterCall()
 
 # Carregamento do pacote

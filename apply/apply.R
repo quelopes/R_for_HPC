@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 # Cria uma matriz M no formato
 #
 #      [,1] [,2] [,3] [,4]
