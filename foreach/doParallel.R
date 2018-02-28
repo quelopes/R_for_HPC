@@ -26,8 +26,8 @@ c <- runif(10000)
 # (a[2]+b[2])^c[2]
 # ...
 # (a[10000]+b[10000])^c[10000]
-system.time(out <- foreach(a, b, c) %dopar% {
-	func(a, b, c)
+system.time(out <- foreach(x=a, y=b, z=c) %dopar% {
+	(x + y)**z
 })
 
 # Agora dividiremos as entradas numa quantidade de fatias igual ao tamanho do
@@ -43,7 +43,7 @@ c_chunk <- clusterSplit(cl, c)
 # ...
 # func(a_chunk[40], b_chunk[40], c_chunk[40])
 system.time(out_chunks <- foreach(i=1:40) %dopar% {
-	        (a_chunk[[i]] + b_chunk[[i]])**c_chunk[[i]]
+	(a_chunk[[i]] + b_chunk[[i]])**c_chunk[[i]]
 })
 
 # A linha abaixo testa se a saída gerada pelas 2 abordagens são iguais
