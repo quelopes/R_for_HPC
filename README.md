@@ -16,4 +16,5 @@ Este repositório está organizado da seguinte forma:
 * sbatch: exemplos de scripts de submissão funcionais do SLURM
 * R-Benchmark: exemplos com bibliotecas de benchmark do R
 * k-means: exemplos com k-means sequencial e paralelo
+* k-means-Benchmark: exemplos com k-means medindo o tempo de execução sequencial e paralelo
 * SpeedupWithoutPar: Exemplos de alterações simples no código que reduzem o tempo computacional
