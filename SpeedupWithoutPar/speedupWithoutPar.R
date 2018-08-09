@@ -2,7 +2,7 @@
 
 # === Benchmark de diversas estrategias de laco no R (Sem paralelismo) ===
 
-pot = 5
+pot = 4
 # Create the data frame
 col1 <- runif (12^pot, 0, 2)
 col2 <- rnorm (12^pot, 0, 2)
@@ -79,10 +79,24 @@ uiti = function(df){
 
 
 # === system.time ===
-system.time({original(data)})
-system.time({preAloc(data)})
-system.time({outloop(data)})
-system.time({oneCond(data)})
-system.time({ifElse(data)})
-system.time({uiti(data)})
+print("=== Original ===")
+original = system.time({original(data)})
+original
+print("=== Pre aloc ===")
+preAloc = system.time({preAloc(data)})
+preAloc
+print("=== outloop ===")
+outLoop = system.time({outloop(data)})
+outLoop
+print("=== oneCond ===")
+oneCond = system.time({oneCond(data)})
+oneCond
+print("=== ifElse ===")
+ifElse = system.time({ifElse(data)})
+ifElse
+print("=== which ===")
+uiti = system.time({uiti(data)})
+uiti
+
+print(rbind(original,preAloc,outLoop,oneCond,ifElse,uiti))
 
