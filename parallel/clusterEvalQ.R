@@ -6,7 +6,7 @@
 library(parallel)
 
 # Inicia um cluster com 4 processos e comunicação MPI
-cl <- makeCluster(4, type="SOCK")
+cl <- makeCluster(4, type="MPI")
 
 # Define uma variável a de valor 10 **no mestre** e exporta essa variável para
 # os workers

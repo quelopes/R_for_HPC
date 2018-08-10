@@ -9,7 +9,7 @@
 library(parallel)
 
 # Inicia um cluster com 4 processos e comunicação MPI
-cl <- makeCluster(4, type="SOCK")
+cl <- makeCluster(4, type="MPI")
 
 # Define uma função que retorna uma quantidade de números aleatórios passada por
 # parâmetro

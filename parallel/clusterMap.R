@@ -6,7 +6,7 @@
 library(parallel)
 
 # Inicia um cluster com 4 processos e comunicação MPI
-cl <- makeCluster(4, type = "SOCK")
+cl <- makeCluster(4, type = "MPI")
 
 # Retorna um vetor de 5 elementos com 
 # sum(1, 5, 1) na 1ª posição,
